@@ -56,13 +56,11 @@ function promptToEnterTask() {
 
 function promptToUpdateTask() {
     let newTask = prompt('update task');
-    let result;
-    if (newTask) {
-        result=updateTask(newTask);
-    }else {
+    if (!newTask) {
         alert('task can not be empty');
         return;
     }
+    result = addTask(newTask);
 
     if (result.isSuccess) {
         alert('task updated');
