@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+
+}
+/*#region header*/
+header{
+    box-sizing: border-box;
+    height: 60vh;
+    border: 1px solid black;
+    background-image:url(images/bg.jpg) ;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 700px;
+    background-color: rgb(220, 217, 208);
+    position: relative;
+}
+.header_text{
+    position: absolute;
+    bottom: 20px;
+    right: 300px; 
+    color: #333;
+    font-size: 24px;
+    padding: 20px;
+}
+/*#endregion*/
+/*#region aboutme*/
+.about_me{
+    box-sizing: border-box;
+    border: 0.1px solid rgb(220, 217, 208);
+    background-color: rgb(220, 217, 208);
+}
+.about_me_text{
+    margin-left: 40px;
+}
+/*#endregion*/
+/*#region contact*/
+.contact{
+    box-sizing: border-box;
+    border: 1px solid rgb(149, 146, 139);
+    background-color:  rgb(149, 146, 139);
+    height: 300px;
+}
+.contact_title{
+    margin-left: 40px;
+}
+.contact_link {
+    display: flex;
+    flex-direction: column; 
+    justify-content:space-evenly;
+    margin-left: 40px;
+    gap: 20px;
+}
+.contact_link a {
+    display: flex;
+}
+.contact_link img {
+    display: block;
+    width: 50px;
+    height: auto;
+}
+/*#endregion*/
+/*#region study*/
+.study{
+    box-sizing: border-box;
+    border: 0.1px solid rgb(220, 217, 208);;
+    background-color: rgb(220, 217, 208);
+    background-image: url(images/study_bg.jpg);
+    background-repeat: no-repeat;
+    height: 800px;
+    background-size:cover;
+    background-position:center;
+    position: sticky;
+    bottom: 0;
+    z-index: -1;
+
+}
+.study_title{
+    margin-left: 40px;
+}
+.study_text{
+    margin-left: 100px;
+}
+/*#endregion*/
+
